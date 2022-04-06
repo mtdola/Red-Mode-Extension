@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Dark Mode by M",
+    "description": "Add a darkmode to all pages on google.com",
+    "version": "1.0",
+    "icons": {
+        "16": "img/dark_mode_16.png",
+        "32": "img/dark_mode_32.png",
+        "128": "img/dark_mode_128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "img/dark_mode_16.png",
+            "32": "img/dark_mode_32.png",
+            "128": "img/dark_mode_128.png"
+        }
+    },  
+    "content_scripts": [
+        {
+        "matches": ["https://www.facebook.com/*"],
+        "css": ["main.css"]
+    }
+],
+    "author": "Darkghost_M"   
+    }
